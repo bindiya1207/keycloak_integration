@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetX</title>
+    <link rel="stylesheet" href="../static/styles/index.css">
+</head>
+<body>
+    <div class="chat-icon" onclick="toggleChat()">
+        💬
+    </div>
+    <div class="chat-container" id="chat-container">
+        <div class="chat-header">
+            <div class="chat-title">
+                <div class="chat-avatar">
+                    <img src="../static/images/laks.jpg" alt="Laksha">
+                </div>
+                <div>
+                    NetX
+                    <div class="chat-subtitle">Virtual Assistant</div>
+                </div>
+            </div>
+            <button class="chat-close-btn" onclick="toggleChat()">×</button>
+        </div>
+        
+        <div class="chat-messages" id="chat-messages"></div>
+        <div class="chat-input-container">
+            <input type="text" id="chat-input" class="chat-input" placeholder="Type a message...">
+            <button class="send-button" onclick="sendMessage()">Send</button>
+        </div>
+        <div class="chat-footer">
+            <div class="powered-by">
+                Powered by  <img src="../static/images/net.jpeg"alt="Company LOGO" class="footer-logo">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+    <script src="../static/scripts/index.js"></script>
+</body>
+</html>
+ 
